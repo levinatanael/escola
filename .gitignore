@@ -11,3 +11,11 @@
 /Escola.Solution/Escola.Infrastructure/obj
 /Escola.Solution/Escola.WebAPI/bin/Debug/net8.0
 /Escola.Solution/Escola.WebAPI/obj
+/Escola.Solution/Escola.Application.Tests/obj
+/Escola.Solution/Escola.Domain.Tests/obj
+/Escola.Solution/Escola.Infra.Tests/obj
+/Escola.Solution/Escola.Application.Tests/bin/Debug/net8.0
+/Escola.Solution/Escola.Domain.Tests/bin/Debug/net8.0
+/Escola.Solution/Escola.Infra.Tests/bin/Debug/net8.0
+/Escola.Solution/Escola.WebAPI.Tests/bin/Debug/net8.0
+/Escola.Solution/Escola.WebAPI.Tests/obj
