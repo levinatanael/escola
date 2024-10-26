@@ -12,7 +12,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<EscolaDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        b => b.MigrationsAssembly("Escola.Infra") // Especifica o assembly de migrações
+    )
+);
 
 builder.Services.AddAutoMapper(typeof(Escola.Application.Mappings.MappingProfile));
 
