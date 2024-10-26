@@ -6,6 +6,11 @@ namespace Escola.Infra.Data.Context
 {
     public class EscolaDbContext : DbContext
     {
+        public EscolaDbContext(DbContextOptions<EscolaDbContext> options)
+            : base(options)
+        {
+        }
+
         public DbSet<Aluno> Alunos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,13 +1,18 @@
 using Escola.Application.Interfaces;
 using Escola.Application.Services;
 using Escola.Domain.Interfaces.Repositories;
+using Escola.Infra.Data.Context;
 using Escola.Infra.Data.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddDbContext<EscolaDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddAutoMapper(typeof(Escola.Application.Mappings.MappingProfile));
 
