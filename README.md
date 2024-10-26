@@ -1,4 +1,4 @@
-# 🌐 Projeto de Estudos - Gestão Escolar
+# 🌐 Projeto Gestão Escolar
 
 Projeto fictício para gestão de escola com o objetivo de explorar as tecnlogias das quais eu possuo domínio.
 
