@@ -30,7 +30,7 @@ builder.Services.AddSwaggerGen(c =>
         Title = "Projeto Gestão Escolar - Documentação Web API",
         Description = "Projeto fictício para gestão de escola com o objetivo de explorar as tecnlogias das quais eu possuo domínio.",
         Contact = new OpenApiContact() { Name = "Levi Natanael", Email = "levi.natanael@gmail.com" },
-        License = new OpenApiLicense() { Name = "MIT License", Url = new Uri("https://opensource.org/licenses/MIT") }
+        License = new OpenApiLicense() { Name = "Linkedin", Url = new Uri("https://www.linkedin.com/in/levinatanael/") }
     });
 });
 
