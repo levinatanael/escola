@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Escola.Solution/.vs/Escola.Solution
+/Escola.Solution/Escola.Application/bin/Debug/net8.0
+/Escola.Solution/Escola.Application/obj
+/Escola.Solution/Escola.Domain/obj
+/Escola.Solution/Escola.Domain/bin/Debug/net8.0
+/Escola.Solution/Escola.Infrastructure/bin/Debug/net8.0
+/Escola.Solution/Escola.Infrastructure/obj
+/Escola.Solution/Escola.WebAPI/bin/Debug/net8.0
+/Escola.Solution/Escola.WebAPI/obj
