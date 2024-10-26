@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Escola.Domain.Entities;
 
 namespace Escola.Domain.Interfaces.Repositories
 {
-    public class IAlunoRepository
+    public interface IAlunoRepository
     {
+        Task<IEnumerable<Aluno>> ObterTodosAsync();
+        Task<Aluno> ObterPorIdAsync(int id);
+        Task AdicionarAsync(Aluno aluno);
+        Task AtualizarAsync(Aluno aluno);
+        Task RemoverAsync(int id);
     }
 }

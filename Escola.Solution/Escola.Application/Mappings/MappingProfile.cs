@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Escola.Application.DTOs;
+using Escola.Domain.Entities;
 
 namespace Escola.Application.Mappings
 {
     public class MappingProfile
     {
+        public MappingProfile()
+        {
+            //CreateMap<Aluno, AlunoDto>().ReverseMap();
+        }
     }
 }
