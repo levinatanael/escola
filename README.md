@@ -6,6 +6,7 @@ Projeto fictício para gestão de escola com o objetivo de explorar as tecnlogia
 
 # :hammer: Funcionalidades do projeto
 
+- [X] `Gestão de Usuários`: CRUD de usuários + Autenticação (Criptografia de senha BCrypt.Net-Next + Token JWT)
 - [X] `Gestão de Alunos`: CRUD do cadastro de alunos
 - [ ] `Gestão de Matrículas`
 - [ ] `Gestão de Notas`
@@ -21,12 +22,13 @@ Projeto fictício para gestão de escola com o objetivo de explorar as tecnlogia
 - ``Entity Framework Core``
 - ``Injeção de Dependência (Ioc)``
 - ``AutoMapper``
-- ``Swagger``
+- ``Swagger (documentação por Annotations)``
 - ``Docker``
 - ``Autenticação JWT``
 - ``Testes Unitários``
 - ``SOLID (separação de responsabilidades e baixo acoplamento)``
 - ``Migrations``
+- ``Criptofrafia BCrypt.Net-Next``
 - ...
 
 ## 📁 Acesso ao projeto
