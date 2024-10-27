@@ -1,5 +1,6 @@
 ﻿using Escola.Application.DTOs;
 using Escola.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -17,6 +18,7 @@ namespace Escola.WebAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [SwaggerOperation(Summary = "Obtém a lista de alunos cadastrado")]
         [SwaggerResponse(StatusCodes.Status200OK, Type = typeof(IEnumerable<AlunoDto>))]
         [SwaggerResponse(StatusCodes.Status400BadRequest)]
@@ -30,6 +32,7 @@ namespace Escola.WebAPI.Controllers
         }
 
         [HttpGet("{id:int}")]
+        [Authorize]
         [SwaggerOperation(Summary = "Obtém um aluno específico pelo Id")]
         [SwaggerResponse(StatusCodes.Status200OK, Type = typeof(AlunoDto))]
         [SwaggerResponse(StatusCodes.Status400BadRequest)]
@@ -46,6 +49,7 @@ namespace Escola.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         [SwaggerOperation(Summary = "Adiciona um novo aluno")]
         [SwaggerResponse(StatusCodes.Status200OK, Type = typeof(AlunoDto))]
         [SwaggerResponse(StatusCodes.Status400BadRequest)]
@@ -62,6 +66,7 @@ namespace Escola.WebAPI.Controllers
         }
 
         [HttpPut("{id:int}")]
+        [Authorize]
         [SwaggerOperation(Summary = "Atualiza um aluno cadastrado")]
         [SwaggerResponse(StatusCodes.Status204NoContent)]
         [SwaggerResponse(StatusCodes.Status400BadRequest)]
@@ -78,6 +83,7 @@ namespace Escola.WebAPI.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize]
         [SwaggerOperation(Summary = "Remove um aluno cadastrado")]
         [SwaggerResponse(StatusCodes.Status204NoContent)]
         [SwaggerResponse(StatusCodes.Status400BadRequest)]

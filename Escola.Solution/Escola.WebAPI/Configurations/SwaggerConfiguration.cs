@@ -8,11 +8,14 @@ namespace Escola.WebAPI.Configurations
         {
             services.AddSwaggerGen(c =>
             {
+                c.EnableAnnotations();
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Projeto Gestão Escolar - Documentação Web API",
                     Description = "Projeto fictício para gestão de escola com o objetivo de explorar as tecnlogias das quais eu possuo domínio.",
-                    Version = "v1"
+                    Version = "v1",
+                    Contact = new OpenApiContact() { Name = "Levi Natanael", Email = "levi.natanael@gmail.com" },
+                    License = new OpenApiLicense() { Name = "Linkedin", Url = new Uri("https://www.linkedin.com/in/levinatanael/") }
                 });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
