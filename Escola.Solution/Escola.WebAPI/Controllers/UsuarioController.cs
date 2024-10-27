@@ -19,6 +19,7 @@ namespace Escola.WebAPI.Controllers
         }
 
         [HttpPost("login")]
+        [AllowAnonymous] // Permite acesso ao endpoint de login sem autenticação
         [SwaggerOperation(Summary = "Autenticação de usuário para geração de token de autorização")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {

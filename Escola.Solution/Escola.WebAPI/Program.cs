@@ -45,11 +45,7 @@ builder.Services.AddAuthentication(options =>
 // Adicione o Swagger com suporte JWT
 builder.Services.AddSwaggerWithJwt();
 
-// Adicione os filtros e serviços
-builder.Services.AddControllers(options =>
-{
-    options.Filters.Add<AuthorizationFilter>(); // Adiciona o filtro de autorização
-});
+builder.Services.AddControllers();
 
 builder.Services.AddControllers();
 

@@ -12,10 +12,10 @@ namespace Escola.WebAPI.Configurations
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Projeto Gestão Escolar - Documentação Web API",
-                    Description = "Projeto fictício para gestão de escola com o objetivo de explorar as tecnlogias das quais eu possuo domínio.",
+                    Description = "Projeto fictício para gestão de escola com o objetivo de explorar as tecnologias das quais eu possuo domínio.",
                     Version = "v1",
                     Contact = new OpenApiContact() { Name = "Levi Natanael", Email = "levi.natanael@gmail.com" },
-                    License = new OpenApiLicense() { Name = "Linkedin", Url = new Uri("https://www.linkedin.com/in/levinatanael/") }
+                    License = new OpenApiLicense() { Name = "LinkedIn", Url = new Uri("https://www.linkedin.com/in/levinatanael/") }
                 });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -37,9 +37,12 @@ namespace Escola.WebAPI.Configurations
                             {
                                 Type = ReferenceType.SecurityScheme,
                                 Id = "Bearer"
-                            }
+                            },
+                            Scheme = "oauth2",
+                            Name = "Bearer",
+                            In = ParameterLocation.Header
                         },
-                        Array.Empty<string>()
+                        new List<string>()
                     }
                 });
             });
