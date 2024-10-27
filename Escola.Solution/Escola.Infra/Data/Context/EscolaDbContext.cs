@@ -12,6 +12,7 @@ namespace Escola.Infra.Data.Context
         }
 
         public DbSet<Aluno> Alunos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
